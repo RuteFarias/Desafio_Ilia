@@ -46,7 +46,7 @@ html{
 }
 body{
    
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     overflow: hidden;
     max-width: 1600px;
     background: black;
@@ -64,6 +64,7 @@ section{
     height: auto;
     
 }
+
 .content{
     float:left;
     width:100%;
@@ -82,6 +83,9 @@ section{
     
 }
 /* Menu Section*/
+
+
+/*End Menu Section*/
 
 #menu{
     display: flex;
@@ -103,7 +107,7 @@ section{
 #menu .nav-list ul{
     list-style: none;
     position: absolute;
-    background-color:rgb(153, 151, 151);
+    background-color:rgb(121, 107, 110);
     width: fit-content;
     left: 0;
     top: 0;
@@ -125,12 +129,23 @@ section{
     display: block;
 
 }
-/*End Menu Section*/
 
 
 
 
 /*Profile Section*/
+
+.profile{
+    min-height: 80vh;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
 
 .presentation{
     display: flex;
@@ -141,20 +156,15 @@ section{
     padding: 8%;
     
 }
-
-.introduction{
-   min-height: 500px;
+.profile .introduction{
    width: 100%;
-   display: flex;
-   align-items: left;
-   justify-content: center;
-   flex-direction: column;
+   text-align: center;
+
 }
 .introduction .intro-text{
     width: 100%;
     height: auto;
 }
-
 
 .introduction .intro-text h1{
     font-size: 49px;
@@ -174,9 +184,15 @@ section{
     font-size: 20px;
     color: #6d6d72;
 }
+.photo{
+    height: auto;
+    width: 30%;
+    margin-left: 5%;
+    
+}
 .photo img{
     height: 60vh;
-    flex: 1;
+    flex: 2;
       
     
 }
@@ -211,12 +227,13 @@ section{
 /*About Section*/
 
 
-#about-me{
+#about{
+   
     background-color: black;
     scroll-margin-top: 80px;
     
 }
-#about-me .about-container{
+#about .about-container{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
@@ -225,13 +242,13 @@ section{
     width: 100%;
 }
 
-#about-me .about-bottom{
+#about .about-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-#about-me .about-item{
+#about .about-item{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -349,7 +366,7 @@ section{
 #gallery .gallery-container{
     flex-direction: column;
     text-align: center;
-    max-width: 1500px;
+    max-width: auto;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -358,7 +375,7 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 150px;
-    padding: 70px;
+    padding: 30px;
     grid-gap: 10px;
 
     
@@ -505,7 +522,7 @@ section{
 #musical-preferences .musical{
     flex-direction: column;
     text-align: center;
-    max-width: 1000px;
+    max-width: auto;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -529,8 +546,8 @@ section{
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 0 10px #6d6d72;
-    margin-top: auto;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #musical-preferences .bar span{
